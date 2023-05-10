@@ -5,19 +5,24 @@ body {
     padding: 2.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
-    background-color: hsl(221, 100%, 72%);
+    background-color: hsl(158, 96%, 20%);
+}
+
+.description, .image,
+.ingredients, .instructions {
+    background-color: hsl(70, 100%, 85%);
 }
 
 .header {
     padding: 1.5em;
     font-size: 2rem;
     text-align: center;
-    background-color: #ffffff;
     overflow: hidden;
+    color: #025033;
+    background-color: hsl(58, 100%, 58%);
 }
 
 .description {
-    background-color: #ffffff;
     height: auto;
     padding: 1.2em;
     margin: 1em;
@@ -39,19 +44,15 @@ body {
     height: 100%;
     padding: 2em;
     margin-top: 2px;
-    background-color: #ffffff;
 }
 
 .ingredients {
     padding: 0.5em;
-    background-color: #ffffff;
-
 }
 
 .instructions {
     padding: 1em;
     margin-top: 740px;
-    background-color: #ffffff;
 }
 
 .main:after {
@@ -64,7 +65,8 @@ body {
     text-align: center;
     padding: 1.5em;
     margin-top: 0.5rem;
-    background-color: #ddd;
+    background-color: hsl(58, 100%, 58%);
+    /*background-color: #ddd;*/
 }
 
 @media screen and (max-width: 800px) {
