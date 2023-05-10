@@ -6,14 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Page</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 2.5rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.5;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            padding: 1.5em;
+            font-size: 2rem;
+            text-align: center;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+
+        .description {
+            background-color: #ffffff;
+            height: auto;
+            padding: 1.2em;
+            margin: 1em;
+        }
+
+        .image {
+            width: 50%;
+            float: left;
+            padding: 2em;
+            /*margin-right: 3em;*/
+            background-color: #ffffff;
+        }
+
+        .ingredients {
+            width: 50%;
+            float: right;
+            padding: 2em;
+            margin-left: 1em;
+            background-color: #ffffff;
+
+        }
+
+        .instructions {
+            /*width: 100%;*/
+            padding: 2em;
+            background-color: #ffffff;
+        }
+
+        .main:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1.5em;
+            margin-top: 2rem;
+            background-color: #ddd;
+            /*border-top: 1px solid gray;*/
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
+    <div class="header">
         <h1>Fall-Apart Pork Stew</h1>
-    </header>
-    <main>
-        <section class="ingredients">
-            <p class="description">A tomato and vegetable pork stew that is sure to please any crowd! It is a long cooking process, good for a day when you are staying at/working at home, but WELL worth the invested time.</p>
+    </div>
+    <div class="main">
+        <div class="description">
+            <p>A tomato and vegetable pork stew that is sure to please any crowd! It is a long cooking process, good for a day when you are staying at/working at home, but WELL worth the invested time.</p>
+        </div>
+        <div class="image">
+            <img src="./images/porkstew.webp" alt="pork stew">
+        </div>
+        <div class="ingredients">
             <h2>Ingredients</h2>
             <ul>
                 <li>2 tablespoons onion powder</li>
@@ -42,8 +111,8 @@
                 <li>1 zucchini, sliced</li>
                 <li>salt and pepper to taste</li>
             </ul>
-        </section>
-        <section class="instructions">
+        </div>
+        <div class="instructions">
             <h2>Steps</h2>
             <ol>
                 <li>Toss together the onion powder, parsley, 1 tablespoon garlic powder, seasoned salt, 1 1/2 tablespoons black pepper, marjoram, cinnamon, and nutmeg in a large, resealable plastic bag. Add the cubed pork, toss until well coated, then seal, and refrigerate overnight.</li>
@@ -53,13 +122,10 @@
                 <li>Pour in the beef broth, stewed tomatoes, cooked pork and spinach, bay leaves, red pepper flakes, and 1 teaspoon garlic powder. Simmer 1 1/2 hours.</li>
                 <li>Stir in the butter beans, yellow squash, and zucchini. Simmer 30 minutes until the vegetables are tender. Season to taste with salt and pepper before serving.</li>
             </ol>
-        </section>
-        <section class="image">
-            <div>
-                <img src="./images/porkstew.webp" alt="pork stew">
-            </div>
-        </section>
-    </main>
-    <footer></footer>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023. Recipe Page. All rights reserved.</p>
+    </div>
 </body>
 </html>
