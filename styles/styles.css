@@ -24,7 +24,7 @@ body {
 }
 
 .left-column {
-    width: 50%;
+    width: 48%;
     float: left;
 }
 
@@ -32,23 +32,26 @@ body {
     width: 50%;
     float: left;
     padding-left: 1.5em;
+    margin-left: 10px;
 }
 
 .image {
     height: 100%;
     padding: 2em;
+    margin-top: 2px;
     background-color: #ffffff;
 }
 
 .ingredients {
-    padding-left: 1em;
-    margin-top: 2em;
+    padding: 0.5em;
     background-color: #ffffff;
 
 }
 
 .instructions {
-    padding: 2em;
+    padding: 1em;
+    margin-top: 730px;
+    /*max-height: 500px;*/
     background-color: #ffffff;
 }
 
@@ -64,3 +67,10 @@ body {
     margin-top: 2rem;
     background-color: #ddd;
 }
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
