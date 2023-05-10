@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    background-color: hsl(221, 100%, 72%);
+}
+
+.header {
+    padding: 1.5em;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.description {
+    background-color: #ffffff;
+    height: auto;
+    padding: 1.2em;
+    margin: 1em;
+}
+
+.left-column {
+    width: 50%;
+    float: left;
+}
+
+.right-column {
+    width: 50%;
+    float: left;
+    padding-left: 1.5em;
+}
+
+.image {
+    height: 100%;
+    padding: 2em;
+    background-color: #ffffff;
+}
+
+.ingredients {
+    padding-left: 1em;
+    margin-top: 2em;
+    background-color: #ffffff;
+
+}
+
+.instructions {
+    padding: 2em;
+    background-color: #ffffff;
+}
+
+.main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 2rem;
+    background-color: #ddd;
+}
